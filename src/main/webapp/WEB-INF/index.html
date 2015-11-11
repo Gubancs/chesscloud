@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<html ng-app="chesscloud">
+<meta charset="UTF-8">
+<title>ChessCloud</title>
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+
+<script src="resources/plugins/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="resources/plugins/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<h1>ChessCloud</h1>
+
+<div ng-controller="WelcomeController" data-ng-init="init()">
+
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/chesscloud">ChessCloud</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+    </div>
+
+
+    <script src="resources/js/ChessCloud.js"></script>
+</div>
+</body>
+</html>

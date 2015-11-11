@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.toupclouders.com/chesscloud/base"
+           xmlns:tns="http://www.toupclouders.com/chesscloud/base"
+           xmlns:c="http://www.toupclouders.com/chesscloud/constant">
+
+    <xs:import schemaLocation="org.topclouders.chesscloud.constant.xsd"
+               namespace="http://www.toupclouders.com/chesscloud/constant"/>
+
+    <xs:complexType name="PgnInfo">
+        <xs:sequence>
+            <xs:element name="white" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="whiteElo" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="black" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="blackElo" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PgnSearchRequest">
+        <xs:sequence>
+            <xs:element name="test" type="xs:dateTime" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ExtendedPgnSearchRequest">
+        <xs:complexContent>
+            <xs:extension base="tns:PgnSearchRequest">
+                <xs:sequence>
+                    <xs:element name="State" type="xs:string"/>
+                    <xs:element name="Zipcode" type="xs:string"/>
+                    <xs:element name="Day" type="c:Day"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+
+    <xs:complexType name="DateRange">
+        <xs:sequence>
+            <xs:element name="from" type="xs:date" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="to" type="xs:date" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="GetPgnRequest">
+        <xs:sequence>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="GetPgnReply">
+        <xs:sequence>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.toupclouders.com/chesscloud/controller"
+           xmlns:tns="http://www.toupclouders.com/chesscloud/controller"
+           xmlns:c="http://www.toupclouders.com/chesscloud/constant">
+
+    <xs:import schemaLocation="org.topclouders.chesscloud.constant.xsd"
+               namespace="http://www.toupclouders.com/chesscloud/constant"/>
+
+
+    <xs:complexType name="PreLoadRequest">
+        <xs:sequence>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PreLoadReply">
+        <xs:sequence>
+            <xs:element name="systemDate" type="xs:dateTime" minOccurs="1"/>
+            <xs:element name="timeZone" type="xs:string" minOccurs="1"/>
+            <xs:element name="characterEncoding" type="xs:string" minOccurs="1"/>
+            <xs:element name="language" type="tns:language" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="language">
+        <xs:restriction base="xs:string">
+            <xs:length value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.toupclouders.com/chesscloud/constant"
+           xmlns:tns="http://www.toupclouders.com/chesscloud/constant">
+
+    <xs:simpleType name="Day">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="MONDAY"/>
+            <xs:enumeration value="TUESDAY"/>
+            <xs:enumeration value="WEDNESDAY"/>
+            <xs:enumeration value="THURSDAY"/>
+            <xs:enumeration value="FRIDAY"/>
+            <xs:enumeration value="SATURDAY"/>
+            <xs:enumeration value="SUNDAY"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
