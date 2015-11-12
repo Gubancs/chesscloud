@@ -8,19 +8,20 @@
 
 package com.toupclouders.chesscloud.base;
 
-import java.io.Serializable;
+import org.topclouders.chesscloud.BaseBean;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-import org.topclouders.chesscloud.BaseBean;
+import java.io.Serializable;
 
 
 /**
  * <p>Java class for PgnInfo complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType name="PgnInfo">
  *   &lt;complexContent>
@@ -35,20 +36,17 @@ import org.topclouders.chesscloud.BaseBean;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PgnInfo", propOrder = {
-    "white",
-    "whiteElo",
-    "black",
-    "blackElo"
+        "white",
+        "whiteElo",
+        "black",
+        "blackElo"
 })
 public class PgnInfo
-    extends BaseBean
-    implements Serializable
-{
+        extends BaseBean
+        implements Serializable {
 
     private final static long serialVersionUID = 1L;
     @XmlElement(required = true)
@@ -60,11 +58,9 @@ public class PgnInfo
 
     /**
      * Gets the value of the white property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getWhite() {
         return white;
@@ -72,11 +68,9 @@ public class PgnInfo
 
     /**
      * Sets the value of the white property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setWhite(String value) {
         this.white = value;
@@ -84,11 +78,9 @@ public class PgnInfo
 
     /**
      * Gets the value of the whiteElo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getWhiteElo() {
         return whiteElo;
@@ -96,11 +88,9 @@ public class PgnInfo
 
     /**
      * Sets the value of the whiteElo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setWhiteElo(String value) {
         this.whiteElo = value;
@@ -108,11 +98,9 @@ public class PgnInfo
 
     /**
      * Gets the value of the black property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getBlack() {
         return black;
@@ -120,11 +108,9 @@ public class PgnInfo
 
     /**
      * Sets the value of the black property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setBlack(String value) {
         this.black = value;
@@ -132,11 +118,9 @@ public class PgnInfo
 
     /**
      * Gets the value of the blackElo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getBlackElo() {
         return blackElo;
@@ -144,11 +128,9 @@ public class PgnInfo
 
     /**
      * Sets the value of the blackElo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setBlackElo(String value) {
         this.blackElo = value;

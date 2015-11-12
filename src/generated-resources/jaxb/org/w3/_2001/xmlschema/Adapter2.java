@@ -8,12 +8,11 @@
 
 package org.w3._2001.xmlschema;
 
-import java.util.Calendar;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
+import java.util.Calendar;
 
 public class Adapter2
-    extends XmlAdapter<String, Calendar>
-{
+        extends XmlAdapter<String, Calendar> {
 
 
     public Calendar unmarshal(String value) {

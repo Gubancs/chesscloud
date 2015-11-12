@@ -8,23 +8,20 @@
 
 package com.toupclouders.chesscloud.base;
 
-import java.io.Serializable;
-import java.util.Calendar;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.topclouders.chesscloud.BaseBean;
 import org.w3._2001.xmlschema.Adapter2;
+
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.io.Serializable;
+import java.util.Calendar;
 
 
 /**
  * <p>Java class for DateRange complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType name="DateRange">
  *   &lt;complexContent>
@@ -37,36 +34,31 @@ import org.w3._2001.xmlschema.Adapter2;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DateRange", propOrder = {
-    "from",
-    "to"
+        "from",
+        "to"
 })
 public class DateRange
-    extends BaseBean
-    implements Serializable
-{
+        extends BaseBean
+        implements Serializable {
 
     private final static long serialVersionUID = 1L;
     @XmlElement(required = true, type = String.class)
-    @XmlJavaTypeAdapter(Adapter2 .class)
+    @XmlJavaTypeAdapter(Adapter2.class)
     @XmlSchemaType(name = "date")
     protected Calendar from;
     @XmlElement(required = true, type = String.class)
-    @XmlJavaTypeAdapter(Adapter2 .class)
+    @XmlJavaTypeAdapter(Adapter2.class)
     @XmlSchemaType(name = "date")
     protected Calendar to;
 
     /**
      * Gets the value of the from property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public Calendar getFrom() {
         return from;
@@ -74,11 +66,9 @@ public class DateRange
 
     /**
      * Sets the value of the from property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFrom(Calendar value) {
         this.from = value;
@@ -86,11 +76,9 @@ public class DateRange
 
     /**
      * Gets the value of the to property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public Calendar getTo() {
         return to;
@@ -98,11 +86,9 @@ public class DateRange
 
     /**
      * Sets the value of the to property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTo(Calendar value) {
         this.to = value;

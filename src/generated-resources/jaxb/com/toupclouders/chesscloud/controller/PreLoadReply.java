@@ -8,23 +8,20 @@
 
 package com.toupclouders.chesscloud.controller;
 
-import java.io.Serializable;
-import java.util.Calendar;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.topclouders.chesscloud.BaseBean;
 import org.w3._2001.xmlschema.Adapter1;
+
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.io.Serializable;
+import java.util.Calendar;
 
 
 /**
  * <p>Java class for PreLoadReply complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType name="PreLoadReply">
  *   &lt;complexContent>
@@ -39,24 +36,21 @@ import org.w3._2001.xmlschema.Adapter1;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PreLoadReply", propOrder = {
-    "systemDate",
-    "timeZone",
-    "characterEncoding",
-    "language"
+        "systemDate",
+        "timeZone",
+        "characterEncoding",
+        "language"
 })
 public class PreLoadReply
-    extends BaseBean
-    implements Serializable
-{
+        extends BaseBean
+        implements Serializable {
 
     private final static long serialVersionUID = 1L;
     @XmlElement(required = true, type = String.class)
-    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlJavaTypeAdapter(Adapter1.class)
     @XmlSchemaType(name = "dateTime")
     protected Calendar systemDate;
     @XmlElement(required = true)
@@ -68,11 +62,9 @@ public class PreLoadReply
 
     /**
      * Gets the value of the systemDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public Calendar getSystemDate() {
         return systemDate;
@@ -80,11 +72,9 @@ public class PreLoadReply
 
     /**
      * Sets the value of the systemDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSystemDate(Calendar value) {
         this.systemDate = value;
@@ -92,11 +82,9 @@ public class PreLoadReply
 
     /**
      * Gets the value of the timeZone property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTimeZone() {
         return timeZone;
@@ -104,11 +92,9 @@ public class PreLoadReply
 
     /**
      * Sets the value of the timeZone property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTimeZone(String value) {
         this.timeZone = value;
@@ -116,11 +102,9 @@ public class PreLoadReply
 
     /**
      * Gets the value of the characterEncoding property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCharacterEncoding() {
         return characterEncoding;
@@ -128,11 +112,9 @@ public class PreLoadReply
 
     /**
      * Sets the value of the characterEncoding property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCharacterEncoding(String value) {
         this.characterEncoding = value;
@@ -140,11 +122,9 @@ public class PreLoadReply
 
     /**
      * Gets the value of the language property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getLanguage() {
         return language;
@@ -152,11 +132,9 @@ public class PreLoadReply
 
     /**
      * Sets the value of the language property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setLanguage(String value) {
         this.language = value;

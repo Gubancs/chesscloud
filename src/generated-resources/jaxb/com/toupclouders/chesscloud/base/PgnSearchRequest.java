@@ -8,27 +8,23 @@
 
 package com.toupclouders.chesscloud.base;
 
+import org.topclouders.chesscloud.BaseBean;
+import org.w3._2001.xmlschema.Adapter1;
+
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import org.topclouders.chesscloud.BaseBean;
-import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
  * <p>Java class for PgnSearchRequest complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType name="PgnSearchRequest">
  *   &lt;complexContent>
@@ -40,48 +36,43 @@ import org.w3._2001.xmlschema.Adapter1;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PgnSearchRequest", propOrder = {
-    "test"
+        "test"
 })
 @XmlSeeAlso({
-    ExtendedPgnSearchRequest.class
+        ExtendedPgnSearchRequest.class
 })
 public class PgnSearchRequest
-    extends BaseBean
-    implements Serializable
-{
+        extends BaseBean
+        implements Serializable {
 
     private final static long serialVersionUID = 1L;
     @XmlElement(type = String.class)
-    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlJavaTypeAdapter(Adapter1.class)
     @XmlSchemaType(name = "dateTime")
     protected List<Calendar> test;
 
     /**
      * Gets the value of the test property.
-     * 
+     * <p>
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the test property.
-     * 
+     * <p>
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getTest().add(newItem);
      * </pre>
-     * 
-     * 
+     * <p>
+     * <p>
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link String }
-     * 
-     * 
      */
     public List<Calendar> getTest() {
         if (test == null) {
@@ -91,8 +82,8 @@ public class PgnSearchRequest
     }
 
     public PgnSearchRequest withTest(Calendar... values) {
-        if (values!= null) {
-            for (Calendar value: values) {
+        if (values != null) {
+            for (Calendar value : values) {
                 getTest().add(value);
             }
         }
@@ -100,7 +91,7 @@ public class PgnSearchRequest
     }
 
     public PgnSearchRequest withTest(Collection<Calendar> values) {
-        if (values!= null) {
+        if (values != null) {
             getTest().addAll(values);
         }
         return this;

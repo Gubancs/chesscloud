@@ -12,18 +12,17 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the com.toupclouders.chesscloud.base package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
+ * This object contains factory methods for each
+ * Java content interface and Java element interface
+ * generated in the com.toupclouders.chesscloud.base package.
+ * <p>An ObjectFactory allows you to programatically
+ * construct new instances of the Java representation
+ * for XML content. The Java representation of XML
+ * content can consist of schema derived interfaces
+ * and classes representing the binding of schema
+ * type definitions, element declarations and model
+ * groups.  Factory methods for each of these are
  * provided in this class.
- * 
  */
 @XmlRegistry
 public class ObjectFactory {
@@ -31,14 +30,12 @@ public class ObjectFactory {
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.toupclouders.chesscloud.base
-     * 
      */
     public ObjectFactory() {
     }
 
     /**
      * Create an instance of {@link DateRange }
-     * 
      */
     public DateRange createDateRange() {
         return new DateRange();
@@ -46,7 +43,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PgnInfo }
-     * 
      */
     public PgnInfo createPgnInfo() {
         return new PgnInfo();
@@ -54,7 +50,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtendedPgnSearchRequest }
-     * 
      */
     public ExtendedPgnSearchRequest createExtendedPgnSearchRequest() {
         return new ExtendedPgnSearchRequest();
@@ -62,7 +57,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetPgnReply }
-     * 
      */
     public GetPgnReply createGetPgnReply() {
         return new GetPgnReply();
@@ -70,7 +64,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetPgnRequest }
-     * 
      */
     public GetPgnRequest createGetPgnRequest() {
         return new GetPgnRequest();
@@ -78,7 +71,6 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PgnSearchRequest }
-     * 
      */
     public PgnSearchRequest createPgnSearchRequest() {
         return new PgnSearchRequest();

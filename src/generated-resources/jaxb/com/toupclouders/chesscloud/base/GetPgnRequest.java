@@ -8,18 +8,19 @@
 
 package com.toupclouders.chesscloud.base;
 
-import java.io.Serializable;
+import org.topclouders.chesscloud.BaseBean;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-import org.topclouders.chesscloud.BaseBean;
+import java.io.Serializable;
 
 
 /**
  * <p>Java class for GetPgnRequest complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType name="GetPgnRequest">
  *   &lt;complexContent>
@@ -30,15 +31,12 @@ import org.topclouders.chesscloud.BaseBean;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "GetPgnRequest")
 public class GetPgnRequest
-    extends BaseBean
-    implements Serializable
-{
+        extends BaseBean
+        implements Serializable {
 
     private final static long serialVersionUID = 1L;
 

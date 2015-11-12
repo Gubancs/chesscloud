@@ -3,7 +3,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://www.toupclouders.com/chesscloud/controller"
            xmlns:tns="http://www.toupclouders.com/chesscloud/controller"
-           xmlns:c="http://www.toupclouders.com/chesscloud/constant">
+>
 
     <xs:import schemaLocation="org.topclouders.chesscloud.constant.xsd"
                namespace="http://www.toupclouders.com/chesscloud/constant"/>

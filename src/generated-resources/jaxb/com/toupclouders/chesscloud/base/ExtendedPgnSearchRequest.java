@@ -8,21 +8,22 @@
 
 package com.toupclouders.chesscloud.base;
 
-import java.io.Serializable;
-import java.util.Calendar;
-import java.util.Collection;
+import com.toupclouders.chesscloud.constant.Day;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-import com.toupclouders.chesscloud.constant.Day;
+import java.io.Serializable;
+import java.util.Calendar;
+import java.util.Collection;
 
 
 /**
  * <p>Java class for ExtendedPgnSearchRequest complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType name="ExtendedPgnSearchRequest">
  *   &lt;complexContent>
@@ -36,19 +37,16 @@ import com.toupclouders.chesscloud.constant.Day;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ExtendedPgnSearchRequest", propOrder = {
-    "state",
-    "zipcode",
-    "day"
+        "state",
+        "zipcode",
+        "day"
 })
 public class ExtendedPgnSearchRequest
-    extends PgnSearchRequest
-    implements Serializable
-{
+        extends PgnSearchRequest
+        implements Serializable {
 
     private final static long serialVersionUID = 1L;
     @XmlElement(name = "State", required = true)
@@ -60,11 +58,9 @@ public class ExtendedPgnSearchRequest
 
     /**
      * Gets the value of the state property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getState() {
         return state;
@@ -72,11 +68,9 @@ public class ExtendedPgnSearchRequest
 
     /**
      * Sets the value of the state property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setState(String value) {
         this.state = value;
@@ -84,11 +78,9 @@ public class ExtendedPgnSearchRequest
 
     /**
      * Gets the value of the zipcode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getZipcode() {
         return zipcode;
@@ -96,11 +88,9 @@ public class ExtendedPgnSearchRequest
 
     /**
      * Sets the value of the zipcode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setZipcode(String value) {
         this.zipcode = value;
@@ -108,11 +98,9 @@ public class ExtendedPgnSearchRequest
 
     /**
      * Gets the value of the day property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Day }
-     *     
+     *
+     * @return possible object is
+     * {@link Day }
      */
     public Day getDay() {
         return day;
@@ -120,11 +108,9 @@ public class ExtendedPgnSearchRequest
 
     /**
      * Sets the value of the day property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Day }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Day }
      */
     public void setDay(Day value) {
         this.day = value;
@@ -147,8 +133,8 @@ public class ExtendedPgnSearchRequest
 
     @Override
     public ExtendedPgnSearchRequest withTest(Calendar... values) {
-        if (values!= null) {
-            for (Calendar value: values) {
+        if (values != null) {
+            for (Calendar value : values) {
                 getTest().add(value);
             }
         }
@@ -157,7 +143,7 @@ public class ExtendedPgnSearchRequest
 
     @Override
     public ExtendedPgnSearchRequest withTest(Collection<Calendar> values) {
-        if (values!= null) {
+        if (values != null) {
             getTest().addAll(values);
         }
         return this;

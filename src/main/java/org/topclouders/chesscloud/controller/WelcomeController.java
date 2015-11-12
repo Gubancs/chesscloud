@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class WelcomeController extends ViewController {
 
     /**
-     *
      * @param preLoadRequest The received request object from the client.
      * @return Return the welcome pre load reply object
      */
